@@ -1,7 +1,7 @@
 
 package algorithmmid1.pkg1;
 import java.util.Scanner;
-public class AlgorithmMid11 {
+public class Algorithm {
    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -14,7 +14,8 @@ public class AlgorithmMid11 {
         } 
         System.out.println("What is the sum of the elements of the array?"); 
         int k = scan.nextInt();
-        int result =subsequenceWSum(array,k);
+        Algorithm algorithm = new Algorithm();
+        int result =algorithm.subsequenceWSum(array,k);
         if(result!=-1){
             System.out.println("Result is: " + result);
         }
@@ -22,7 +23,7 @@ public class AlgorithmMid11 {
             System.out.println("No subsequence!");
        }
     }
-    static int subsequenceWSum(int array[], int k){
+     int subsequenceWSum(int array[], int k){
 
         for(int m=0; m<array.length; m++){
             int sum=0; int j=m;
